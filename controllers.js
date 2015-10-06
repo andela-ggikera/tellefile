@@ -1,14 +1,13 @@
 'use strict';
 
 angular.module('tellefile.controllers', [])
-
 .controller('BeginCtrl',
   function($scope, $state, $timeout, $ionicModal, ionicMaterialInk, ErrorService, CameraService, Images, SQLiteStorage){
     var console_url = 'https://10.0.2.2:8000/console';
     var sock = io(console_url);
-    $scope.user = {
+    /*$scope.user = {
       Name: "Jee Gik", Avatar : ''
-    };
+    };*/
     var sqlite = SQLiteStorage.isAvailable();
     $scope.$on('$ionicView.beforeEnter', function(){
 
@@ -27,17 +26,6 @@ angular.module('tellefile.controllers', [])
     };
     
     ionicMaterialInk.displayEffect();
-
-    /*
-
-    $scope.chooseCountry = function () {
-      var modal = $modal.open({
-        templateUrl: templateUrl('country_selection'),
-        controller: 'CountrySelection'
-      });
-
-      modal.result.then(selectCountry);
-    };*/
 
 })
 
@@ -1383,5 +1371,6 @@ moment.locale('en', {
     });
   }
 });
+
 
 
