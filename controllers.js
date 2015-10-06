@@ -1385,34 +1385,3 @@ moment.locale('en', {
 });
 
 
-
-
-  /*
-  $scope.uploadFile = function(){
-    window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onFileSystemSuccess, fail);
-
-    function onFileSystemSuccess(fileSystem){
-      fileSystem.root.getDirectory('Downloads',
-      {create:false, exclusive:false}, getDirSuccess, fail);
-    } 
-    function getDirSuccess(dirEntry){
-        var directoryReader = dirEntry.createReader();
-        directoryReader.readEntries(success, fail); 
-    }
-    
-    function success(fileSystem){
-      var directories = {};
-      var i;
-      for(i=0; i< fileSystem.length; i++){
-        //console.log(fileSystem);
-        directories.push(fileSystem);
-      }
-      $scope.directory = directories.name;
-    }
-    function fail(err){
-      $cordovaDialogs.alert(err,"Error",'Back');
-      console.log(err.code + " " + err);
-    }
-  };
-*/
-
