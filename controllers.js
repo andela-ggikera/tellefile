@@ -1416,5 +1416,3 @@ moment.locale('en', {
   };
 */
 
-
- This is a new file on version 0.0.2
