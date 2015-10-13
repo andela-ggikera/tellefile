@@ -98,6 +98,7 @@ angular.module('tellefile.controllers', [])
 
   });
 
+	//send the code to the user's phone
   $scope.sendCode = function(){
     $scope.credentials.phone_full = '+' + $scope.credentials.phone_country + ' ' + $scope.credentials.phone_number;
     ErrorService.confirm('Is this correct?',$scope.credentials.phone_full)
